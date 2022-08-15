@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <div style="margin-left: 550px;"><h1>Simple Calculator</h1></div> 
+ <div style="margin-left: 550px;">
+    <form onsubmit=" return false" >
+        num1: <input id="num1" type="number" required>
+        <br>
+        <br>
+        num2: <input id="num2" type="number" required>
+        <br>
+        <br>
+        <button onClick="myFunction()"type="submit" style="background-color : #C04227; color: white; ">Addition</button>
+        <button onClick="myFunction1()"type="submit" style="background-color : #4D190E; color: white; ">Subtract</button>
+        <button onClick="myFunction2()"type="submit" style="background-color : #E82C03; color: white; ">Multiply</button>
+        <button onClick="myFunction3()"type="submit" style="background-color : #D69183; color: white; ">Divide</button>
+    </form>
+
+</div>
+    <h3  id="result" style="margin-left: 550px;">     </h3>
+
+    <script>
+        function myFunction() {
+            let firstNumber = Number(document.querySelector("#num1").value)
+            let secondNumber = +document.querySelector("#num2").value
+
+            console.log(firstNumber, secondNumber)
+
+            let sum = firstNumber + secondNumber;
+
+          document.querySelector( "#result").innerHTML = sum;
+        }
+
+
+
+        function myFunction1() {
+            let firstNumber = Number(document.querySelector("#num1").value)
+            let secondNumber = +document.querySelector("#num2").value
+
+            console.log(firstNumber, secondNumber)
+
+            let sum = firstNumber - secondNumber;
+
+            document.querySelector("#result").innerHTML = sum;
+        }
+
+
+        function myFunction2() {
+            let firstNumber = Number(document.querySelector("#num1").value)
+            let secondNumber = +document.querySelector("#num2").value
+
+            console.log(firstNumber, secondNumber)
+
+            let sum = firstNumber * secondNumber;
+
+            document.querySelector("#result").innerHTML = sum;
+        }
+
+
+        function myFunction3() {
+            let firstNumber = Number(document.querySelector("#num1").value)
+            let secondNumber = +document.querySelector("#num2").value
+
+            console.log(firstNumber, secondNumber)
+
+            let sum = firstNumber / secondNumber;
+
+            document.querySelector("#result").innerHTML = sum;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
